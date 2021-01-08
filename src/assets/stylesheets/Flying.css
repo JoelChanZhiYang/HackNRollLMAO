@@ -5,15 +5,17 @@
   animation-name: flying-target;
   position: relative;
   animation-timing-function: linear;
+  display: block;
+  overflow: hidden;
 }
 @keyframes flying-target {
-  from {
+  0% {
     left: -1000px;
   }
 
-  to {
+  100% {
     left: 1000px;
-    display: none;
+    opacity: 0%;
   }
 }
 
