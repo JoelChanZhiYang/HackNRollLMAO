@@ -1,6 +1,5 @@
 .flying_item {
   width: 200px;
-  left: 1000px;
   animation-duration: 1s;
   animation-name: flying-target;
   position: relative;
@@ -15,12 +14,13 @@
 
   100% {
     left: 1000px;
-    opacity: 0%;
+    opacity: 100%;
   }
 }
 
 .flying_text {
   font-family: inspiration;
+  font-size: xx-large;
   animation-name: fade-in;
   animation-duration: 1s;
   animation-timing-function: linear;

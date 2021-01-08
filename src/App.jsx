@@ -52,7 +52,7 @@ class App extends Component {
       </div>
     );
     const items = this.state.items.map((e, index) => {
-      if (e < 0.025) {
+      if (e < 0.025 && this.state.length > 20) {
         return (
           <div key={index} className="one_row">
             {this.emptyRowSegment()}
@@ -60,7 +60,7 @@ class App extends Component {
             <Text randNum={e * 20} />
           </div>
         );
-      } else if (e < 0.05) {
+      } else if (e < 0.05 && this.state.length > 20) {
         return (
           <div key={index} className="one_row">
             <Text randNum={e * 20} />
@@ -68,7 +68,7 @@ class App extends Component {
             {this.emptyRowSegment()}
           </div>
         );
-      } else if (e < 0.054) {
+      } else if (e < 1 && this.state.length > 0) {
         return (
           <div key={index} className="one_row">
             {this.emptyRowSegment()}
@@ -76,7 +76,7 @@ class App extends Component {
             <Flying /> 
           </div>
         );
-      } else if (e < 0.058) {
+      } else if (e < 0.058 && this.state.length > 500) {
         return (
           <div key={index} className="one_row">
             {this.emptyRowSegment()}

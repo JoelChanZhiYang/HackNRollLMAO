@@ -39,7 +39,6 @@ class Treasure extends Component {
 
   render() {
     let item = texts[Math.floor(this.props.randNum * texts.length)];
-    console.log(item);
     return (
       <div className="row_segment">
         <div className="treasure_grid">

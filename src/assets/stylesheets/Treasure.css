@@ -1,5 +1,5 @@
 .treasure_img {
-  width: 100px;
+  width: 80%;
   cursor: pointer;
 }
 
@@ -19,14 +19,14 @@
   font-family: treasure;
 }
 
-.img_store:hover #not_hover{
-    display: none;
+.img_store:hover #not_hover {
+  display: none;
 }
 
-.img_store:hover #hover{
-    display:flex;
+.img_store:hover #hover {
+  display: flex;
 }
 
-#hover{
-    display:none;
+#hover {
+  display: none;
 }
