@@ -8,12 +8,23 @@ class App extends Component {
 
     this.state = {
       items: [],
+      length: 0,
     };
     this.loadItems = this.loadItems.bind(this);
+    this.bringToTop = this.bringToTop.bind(this);
   }
 
   loadItems() {
-    this.setState((state) => ({ items: state.items.concat("hi") }));
+    this.setState((state) => ({
+      items: state.items.concat("hi"),
+      length: state.length + 1,
+    }));
+  }
+
+  bringToTop() {
+    this.setState(state => ({items: []}))
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0;
   }
 
   render() {
@@ -22,22 +33,28 @@ class App extends Component {
         Loading ...
       </div>
     );
-    const items = this.state.items.map((e, index) => (
-      <h1 key={index} className="col-sm-12 col-md-7 col-lg-5">
-        hi
-      </h1>
-    ));
+    const items = this.state.items.map((e, index) => {
+      return index === 100 ? (
+        <button onClick={this.bringToTop}>hi</button>
+      ) : (
+        <h1 key={index} className="">
+          hi
+        </h1>
+      );
+    });
 
     return (
       <div className="row justify-content-center">
-        <InfiniteScroll
-          pageStart={0}
-          loadMore={this.loadItems}
-          hasMore={true}
-          loader={loader}
-        >
-          <div className="tracks">{items}</div>
-        </InfiniteScroll>
+        <div className="col-sm-12 col-md-7 col-lg-5">
+          <InfiniteScroll
+            pageStart={0}
+            loadMore={this.loadItems}
+            hasMore={true}
+            loader={loader}
+          >
+            <div className="tracks">{items}</div>
+          </InfiniteScroll>
+        </div>
       </div>
     );
   }
