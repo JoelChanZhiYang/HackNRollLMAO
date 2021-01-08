@@ -7,6 +7,15 @@ const texts = [
   "Dont be tempted",
   "I wonder whats inside...",
   "Definitely something cool inside",
+  "Not SUS",
+  "OwO whats this",
+  "Click me ... ?",
+  "Do not disturb",
+  "Beware your curiosity",
+  "Worth checking out",
+  "May contain good stuff",
+  "Not a trap",
+  "I'm a trap",
 ];
 
 function shuffle(array) {

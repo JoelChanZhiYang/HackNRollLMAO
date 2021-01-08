@@ -1,9 +1,7 @@
 import React, { Component } from "react";
 import "./assets/stylesheets/Text.css";
 
-let texts = [
-  "Hello there",
-  "What's cooking good looking?",
+const texts = [
   "Life is a journey, not a destination.",
   "Don't Give Up!",
   "You're almost there.",
@@ -23,7 +21,7 @@ let texts = [
   "Good things take time",
   "Your success lie in you",
   "Be you\nDo you\nFor you",
-  "Scroll to you drop!",
+  "Scroll till you drop!",
   "Your only limit is your mind",
   "Just do it",
   "Trust me, it's worth it",
@@ -31,7 +29,14 @@ let texts = [
   "This is very productive, don't worry",
 ];
 
-const disText = ['hi']
+const disText = [
+    "This might not ever end",
+    "Why are you wasting your time?",
+    "There is no reward worth this effort",
+    "Your efforts are futile",
+    "Go do something else instead",
+    ""
+]
 
 
 class Text extends Component {
