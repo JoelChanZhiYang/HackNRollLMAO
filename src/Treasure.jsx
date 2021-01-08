@@ -1,10 +1,6 @@
 import React, { Component } from "react";
-<<<<<<< Updated upstream
 import './assets/stylesheets/Treasure.css'
-=======
-import "./assets/stylesheets/Treasure.css";
-import img from "./Treasure.png";
->>>>>>> Stashed changes
+import img from './Treasure.png'
 
 class Treasure extends Component {
   constructor(props) {
