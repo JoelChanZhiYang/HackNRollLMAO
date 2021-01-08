@@ -46,22 +46,34 @@ class App extends Component {
       </div>
     );
     const items = this.state.items.map((e, index) => {
-      if(e < 0.1){
+      if(e < 0.05){
         return (
           <div key={index} className="one_row">
+            {this.emptyRowSegment()}
             <Arrow></Arrow>
             <Text randNum={e * 10} />
+          </div>
+        )
+      }else if(e < 0.1){
+        return (
+          <div key={index} className="one_row">
+            <Text randNum={e * 10} />
+            <Arrow></Arrow>
+            {this.emptyRowSegment()}
           </div>
         )
       }else if(e < 0.996){
         return (
           <div key={index} className="one_row">
+            {this.emptyRowSegment()}
             <Arrow></Arrow>
+            {this.emptyRowSegment()}
           </div>
         )
       }else{
         return (
           <div key={index} className="one_row">
+            {this.emptyRowSegment()}
             <Arrow></Arrow>
             <Treasure fku={this.bringToTop}></Treasure>
           </div>
