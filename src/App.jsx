@@ -4,6 +4,7 @@ import { Component } from "react";
 import Arrow from "./Arrow.jsx";
 import Text from "./Text.jsx";
 import Treasure from "./Treasure.jsx";
+import Flying from "./Flying.jsx";
 
 class App extends Component {
   constructor(props) {
@@ -72,7 +73,7 @@ class App extends Component {
           <div key={index} className="one_row">
             {this.emptyRowSegment()}
             <Arrow/>
-            {this.emptyRowSegment()}
+            <Flying /> 
           </div>
         );
       } else {
