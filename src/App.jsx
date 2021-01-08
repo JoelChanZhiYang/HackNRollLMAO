@@ -51,19 +51,19 @@ class App extends Component {
       </div>
     );
     const items = this.state.items.map((e, index) => {
-      if (e < 0.05) {
+      if (e < 0.025) {
         return (
           <div key={index} className="one_row">
             {this.emptyRowSegment()}
-            <Arrow></Arrow>
-            <Text randNum={e * 10} />
+            <Arrow/>
+            <Text randNum={e * 20} />
           </div>
         );
-      } else if (e < 0.1) {
+      } else if (e < 0.05) {
         return (
           <div key={index} className="one_row">
-            <Text randNum={e * 10} />
-            <Arrow></Arrow>
+            <Text randNum={e * 20} />
+            <Arrow/>
             {this.emptyRowSegment()}
           </div>
         );
@@ -71,7 +71,7 @@ class App extends Component {
         return (
           <div key={index} className="one_row">
             {this.emptyRowSegment()}
-            <Arrow></Arrow>
+            <Arrow/>
             {this.emptyRowSegment()}
           </div>
         );
@@ -79,7 +79,7 @@ class App extends Component {
         return (
           <div key={index} className="one_row">
             {this.emptyRowSegment()}
-            <Arrow></Arrow>
+            <Arrow/>
             <Treasure fku={this.bringToTop} randNum={(e - 0.9) * 10}></Treasure>
           </div>
         );
@@ -89,7 +89,7 @@ class App extends Component {
     return (
       <div className="row justify-content-center">
         <div className="col-sm-12 col-md-9 col-lg-8">
-          <h1 className="text-center">{this.state.header}</h1>
+          <p className="text-center banner">{this.state.header}</p>
           <InfiniteScroll
             pageStart={0}
             loadMore={this.loadItems}
