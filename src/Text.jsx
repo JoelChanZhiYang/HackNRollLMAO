@@ -35,7 +35,22 @@ const disText = [
     "There is no reward worth this effort",
     "Your efforts are futile",
     "Go do something else instead",
-    ""
+    "There is no cool stuff to be found",
+    "It is ok to stop now",
+    "Ever heard of the sunk cost fallacy?",
+    "Obsessions are not healthy",
+    "Stop wasting your life",
+    "Seriously? You're still here?",
+    "You need to know when to stop",
+    "PLEASE STOP",
+    "Proceed at your own risk",
+    "Leave now while you still can",
+    "You don't deserve this",
+    "Scroll down if you're stupid",
+    "You need to take a hint",
+    "Think of your opportunity costs of scrolling",
+    "How are you so stubborn?",
+    "Remember when I said you should never give up? I lied."
 ]
 
 
