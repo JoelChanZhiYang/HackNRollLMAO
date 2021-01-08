@@ -4,6 +4,7 @@
   animation-name: flying-target;
   position: relative;
   animation-timing-function: linear;
+  animation-fill-mode: forwards;
   display: block;
   overflow: hidden;
 }
@@ -13,7 +14,7 @@
   }
 
   100% {
-    left: 1000px;
+    left: 500px;
     opacity: 100%;
   }
 }
@@ -37,4 +38,7 @@
   to {
     opacity: 100%;
   }
+}
+.fkthis{
+    display:none;
 }

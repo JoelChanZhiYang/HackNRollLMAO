@@ -68,7 +68,7 @@ class App extends Component {
             {this.emptyRowSegment()}
           </div>
         );
-      } else if (e < 1 && this.state.length > 0) {
+      } else if (e < 0.054 && this.state.length > 200) {
         return (
           <div key={index} className="one_row">
             {this.emptyRowSegment()}
