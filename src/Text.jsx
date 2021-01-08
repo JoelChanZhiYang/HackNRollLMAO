@@ -10,7 +10,7 @@ let texts = [
     "Discipline is the bridge between goals and success.",
     "Nothing ever results from half measures",
     "You can do it!",
-    "Rome was no built in a day.",
+    "Rome was not built in a day.",
     "That's it? You're giving up?",
     "Your mother did not raise a quitter",
     "Come on, just a bit more.",
