@@ -46,13 +46,27 @@ class App extends Component {
       </div>
     );
     const items = this.state.items.map((e, index) => {
-      return (
-        <div key={index} className="one_row">
-          <Treasure fku={this.bringToTop}></Treasure>
-          <Arrow></Arrow>
-          <Text randNum={e} />
-        </div>
-      );
+      if(e < 0.1){
+        return (
+          <div key={index} className="one_row">
+            <Arrow></Arrow>
+            <Text randNum={e * 10} />
+          </div>
+        )
+      }else if(e < 0.996){
+        return (
+          <div key={index} className="one_row">
+            <Arrow></Arrow>
+          </div>
+        )
+      }else{
+        return (
+          <div key={index} className="one_row">
+            <Arrow></Arrow>
+            <Treasure fku={this.bringToTop}></Treasure>
+          </div>
+        )
+      }
     });
 
     return (

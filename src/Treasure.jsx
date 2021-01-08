@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import './assets/stylesheets/Treasure.css'
 
 class Treasure extends Component {
   constructor(props) {
