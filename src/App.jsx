@@ -1,7 +1,8 @@
-import "./App.css";
+import "./assets/stylesheets/App.css";
 import InfiniteScroll from "react-infinite-scroller";
 import { Component } from "react";
 import Arrow from "./Arrow.jsx";
+import Text from "./Text.jsx";
 
 class App extends Component {
   constructor(props) {
@@ -39,7 +40,7 @@ class App extends Component {
         <button onClick={this.bringToTop}>hi</button>
       ) : (
         <h1 key={index} className="">
-          <Arrow />
+          <Text randNum = {Math.random()}/>
         </h1>
       );
     });
