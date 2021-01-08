@@ -3,10 +3,11 @@
   height: 20px;
   width: 20px;
   left: 1000px;
-  animation-duration: 3s;
+  animation-duration: 1s;
   animation-name: flying-target;
   position:relative;
   border-radius: 50%;
+  animation-timing-function: linear;
 }
 @keyframes flying-target{
     from {
