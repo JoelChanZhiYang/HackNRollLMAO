@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/HackNRollLMAO/static/css/main.8c8b27cf.chunk.css",
+    "main.js": "/HackNRollLMAO/static/js/main.f655b909.chunk.js",
+    "main.js.map": "/HackNRollLMAO/static/js/main.f655b909.chunk.js.map",
+    "runtime-main.js": "/HackNRollLMAO/static/js/runtime-main.af2476fa.js",
+    "runtime-main.js.map": "/HackNRollLMAO/static/js/runtime-main.af2476fa.js.map",
+    "static/js/2.6880d39b.chunk.js": "/HackNRollLMAO/static/js/2.6880d39b.chunk.js",
+    "static/js/2.6880d39b.chunk.js.map": "/HackNRollLMAO/static/js/2.6880d39b.chunk.js.map",
+    "static/js/3.d5600661.chunk.js": "/HackNRollLMAO/static/js/3.d5600661.chunk.js",
+    "static/js/3.d5600661.chunk.js.map": "/HackNRollLMAO/static/js/3.d5600661.chunk.js.map",
+    "index.html": "/HackNRollLMAO/index.html",
+    "static/css/main.8c8b27cf.chunk.css.map": "/HackNRollLMAO/static/css/main.8c8b27cf.chunk.css.map",
+    "static/js/2.6880d39b.chunk.js.LICENSE.txt": "/HackNRollLMAO/static/js/2.6880d39b.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/HackNRollLMAO/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.af2476fa.js",
+    "static/js/2.6880d39b.chunk.js",
+    "static/css/main.8c8b27cf.chunk.css",
+    "static/js/main.f655b909.chunk.js"
+  ]
+}
