@@ -68,7 +68,7 @@ class App extends Component {
             {this.emptyRowSegment()}
           </div>
         );
-      } else if (e < 0.9) {
+      } else if (e < 0.09) {
         return (
           <div key={index} className="one_row">
             {this.emptyRowSegment()}
@@ -76,12 +76,20 @@ class App extends Component {
             <Flying /> 
           </div>
         );
+      } else if (e < 0.098) {
+        return (
+          <div key={index} className="one_row">
+            {this.emptyRowSegment()}
+            <Arrow/>
+            <Treasure fku={this.bringToTop} randNum={(e - 0.054) * 250}></Treasure>
+          </div>
+        );
       } else {
         return (
           <div key={index} className="one_row">
             {this.emptyRowSegment()}
             <Arrow/>
-            <Treasure fku={this.bringToTop} randNum={(e - 0.9) * 10}></Treasure>
+            {this.emptyRowSegment()}
           </div>
         );
       }

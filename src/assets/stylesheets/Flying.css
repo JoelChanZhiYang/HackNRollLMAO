@@ -1,41 +1,38 @@
 .flying_item {
-  background-color: yellow;
-  height: 20px;
-  width: 20px;
+  width: 200px;
   left: 1000px;
   animation-duration: 1s;
   animation-name: flying-target;
-  position:relative;
-  border-radius: 50%;
+  position: relative;
   animation-timing-function: linear;
 }
-@keyframes flying-target{
-    from {
-        left: -1000px;
-    }
+@keyframes flying-target {
+  from {
+    left: -1000px;
+  }
 
-    to {
-        left: 1000px;
-        display: none;
-    }
+  to {
+    left: 1000px;
+    display: none;
+  }
 }
 
-.flying_text{
-    font-family: inspiration;
-    animation-name: fade-in;
-    animation-duration: 1s;
-    animation-timing-function: linear;
-    opacity:0%;
-    display:block;
-    animation-delay: 1s;
-    animation-fill-mode: forwards;
+.flying_text {
+  font-family: inspiration;
+  animation-name: fade-in;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  opacity: 0%;
+  display: block;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
 }
 
-@keyframes fade-in{
-    from {
-        opacity: 0%;
-    }
-    to {
-        opacity: 100%;
-    }
+@keyframes fade-in {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
 }
