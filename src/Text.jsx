@@ -1,8 +1,13 @@
 import React, { Component } from 'react';
+import './assets/stylesheets/Text.css';
 
 const texts = [
     "Hello there",
-    "What's cooking good looking?"
+    "What's cooking good looking?",
+    "Life is a journey, not a destination.",
+    "Don't Give Up!",
+    "You're almost there.",
+    "Discipline is the bridge between goals and accomplishments."
 ]
 
 class Text extends Component {
