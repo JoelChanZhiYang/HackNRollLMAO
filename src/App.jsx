@@ -6,6 +6,8 @@ import Text from "./Text.jsx";
 import Treasure from "./Treasure.jsx";
 import Flying from "./Flying.jsx";
 
+const max_length = 1000;
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -102,7 +104,7 @@ class App extends Component {
           <InfiniteScroll
             pageStart={0}
             loadMore={this.loadItems}
-            hasMore={this.state.length < 1000}
+            hasMore={this.state.length < max_length}
             loader={loader}
           >
             <div className="tracks">{items}</div>

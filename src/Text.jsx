@@ -7,7 +7,15 @@ let texts = [
     "Life is a journey, not a destination.",
     "Don't Give Up!",
     "You're almost there.",
-    "Discipline is the bridge between goals and accomplishments."
+    "Discipline is the bridge between goals and success.",
+    "Nothing ever results from half measures",
+    "You can do it!",
+    "Rome was no built in a day.",
+    "That's it? You're giving up?",
+    "Your mother did not raise a quitter",
+    "Come on, just a bit more.",
+    "Last stretch, I swear",
+    "Just one more scroll away"
 ]
 
 function shuffle(array) {

@@ -1,6 +1,6 @@
 .flying_item {
   width: 200px;
-  animation-duration: 1s;
+  animation-duration: 2s;
   animation-name: flying-target;
   position: relative;
   animation-timing-function: linear;
@@ -39,6 +39,6 @@
     opacity: 100%;
   }
 }
-.fkthis{
-    display:none;
+.fkthis {
+  display: none;
 }
