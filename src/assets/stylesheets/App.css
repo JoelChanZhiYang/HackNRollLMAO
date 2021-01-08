@@ -14,7 +14,6 @@
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -30,7 +29,7 @@
 
 .one_row {
   display: flex;
-  padding: 30px
+  padding: 30px;
 }
 
 .row_segment {
