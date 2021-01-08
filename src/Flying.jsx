@@ -10,6 +10,7 @@ class Flying extends Component {
   render() {
     return (
       <div className="row_segment">
+        <p className ="flying_text">If only you clicked that...</p>
         <div className="flying_item"></div>
       </div>
     );
