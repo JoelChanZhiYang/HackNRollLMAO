@@ -18,3 +18,8 @@
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .plain_arrow{
+    animation-name:none;
+  }
+}
