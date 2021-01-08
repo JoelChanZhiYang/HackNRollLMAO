@@ -36,9 +36,9 @@ class Text extends Component {
         super(props);
         this.state = {  }
     }
-    
+
     render() { 
-        let item = texts[Math.floor(this.props.randNum * texts.length)];
+        let item = texts[Math.floor(this.props.randNum * texts.length)].toUpperCase();
         return ( <p className='plain_text row_segment'>{item}</p> );
     }
 }

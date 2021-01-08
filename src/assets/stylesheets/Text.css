@@ -1,0 +1,9 @@
+@font-face {
+  font-family: inspiration;
+  src: url(../fonts/Inspirational_text.woff);
+}
+
+.plain_text {
+  font-family: inspiration;
+  font-size:x-large;
+}

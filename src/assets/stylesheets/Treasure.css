@@ -1,10 +1,32 @@
 .treasure_img {
-    width: 100px;
+  width: 100px;
+  cursor: pointer;
 }
 
-.treasure_grid{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: stretch;
+.treasure_grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: stretch;
+}
+
+@font-face {
+  font-family: treasure;
+  src: url(../fonts/TreasureMap.woff);
+}
+
+.treasure_text {
+  font-family: treasure;
+}
+
+.img_store:hover #not_hover{
+    display: none;
+}
+
+.img_store:hover #hover{
+    display:flex;
+}
+
+#hover{
+    display:none;
 }
