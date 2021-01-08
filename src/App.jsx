@@ -59,13 +59,13 @@ class App extends Component {
           <div key={index} className="one_row">
             {this.emptyRowSegment()}
             <Arrow/>
-            <Text randNum={e * 20} />
+            <Text randNum={e * 20} length = {this.state.length}/>
           </div>
         );
       } else if (e < 0.05 && this.state.length > 20) {
         return (
           <div key={index} className="one_row">
-            <Text randNum={e * 20} />
+            <Text randNum={e * 20} length = {this.state.length}/>
             <Arrow/>
             {this.emptyRowSegment()}
           </div>
