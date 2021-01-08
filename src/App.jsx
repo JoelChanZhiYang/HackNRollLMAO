@@ -5,8 +5,9 @@ import Arrow from "./Arrow.jsx";
 import Text from "./Text.jsx";
 import Treasure from "./Treasure.jsx";
 import Flying from "./Flying.jsx";
+import Yay from "./Yay";
 
-const max_length = 1000;
+const max_length = 100;
 
 class App extends Component {
   constructor(props) {
@@ -16,6 +17,7 @@ class App extends Component {
       header: "Scroll Down For Something Cool",
       items: [],
       length: 0,
+      completed: false,
     };
     this.loadItems = this.loadItems.bind(this);
     this.bringToTop = this.bringToTop.bind(this);
@@ -47,26 +49,38 @@ class App extends Component {
     return <div className="row_segment"></div>;
   }
 
+  endMessage() {
+    return (
+      <h2 className ="final"onClick={() => this.setState((state) => ({ completed: true }))}>
+        Congratulations! Click me!
+      </h2>
+    );
+  }
+
   render() {
     const loader = (
       <div className="loader" key={0}>
         Loading ...
       </div>
     );
+
+    if (this.state.completed) {
+      return <Yay />;
+    }
     const items = this.state.items.map((e, index) => {
       if (e < 0.025 && this.state.length > 20) {
         return (
           <div key={index} className="one_row">
             {this.emptyRowSegment()}
-            <Arrow/>
-            <Text randNum={e * 20} length = {this.state.length}/>
+            <Arrow />
+            <Text randNum={e * 20} length={this.state.length} />
           </div>
         );
       } else if (e < 0.05 && this.state.length > 20) {
         return (
           <div key={index} className="one_row">
-            <Text randNum={e * 20} length = {this.state.length}/>
-            <Arrow/>
+            <Text randNum={e * 20} length={this.state.length} />
+            <Arrow />
             {this.emptyRowSegment()}
           </div>
         );
@@ -74,23 +88,26 @@ class App extends Component {
         return (
           <div key={index} className="one_row">
             {this.emptyRowSegment()}
-            <Arrow/>
-            <Flying /> 
+            <Arrow />
+            <Flying />
           </div>
         );
       } else if (e < 0.058 && this.state.length > 500) {
         return (
           <div key={index} className="one_row">
             {this.emptyRowSegment()}
-            <Arrow/>
-            <Treasure fku={this.bringToTop} randNum={(e - 0.054) * 250}></Treasure>
+            <Arrow />
+            <Treasure
+              fku={this.bringToTop}
+              randNum={(e - 0.054) * 250}
+            ></Treasure>
           </div>
         );
       } else {
         return (
           <div key={index} className="one_row">
             {this.emptyRowSegment()}
-            <Arrow/>
+            <Arrow />
             {this.emptyRowSegment()}
           </div>
         );
@@ -109,6 +126,7 @@ class App extends Component {
           >
             <div className="tracks">{items}</div>
           </InfiniteScroll>
+          {this.state.length > max_length -1 ?this.endMessage(): ""}
         </div>
       </div>
     );

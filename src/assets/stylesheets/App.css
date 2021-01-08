@@ -54,3 +54,9 @@
   font-weight: bold;
   margin-bottom: 10vw;
 }
+
+.final{
+  text-align: center;
+  cursor: pointer;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
