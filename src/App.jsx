@@ -7,7 +7,7 @@ import Treasure from "./Treasure.jsx";
 import Flying from "./Flying.jsx";
 import Yay from "./Yay";
 
-const max_length = 100;
+const max_length = 1000;
 
 class App extends Component {
   constructor(props) {
