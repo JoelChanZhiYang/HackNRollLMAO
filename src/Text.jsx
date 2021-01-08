@@ -13,7 +13,7 @@ class Text extends Component {
     
     render() { 
         let item = texts[Math.floor(this.props.randNum * texts.length)];
-        return ( <p>{item}</p> );
+        return ( <p className='plain_text'>{item}</p> );
     }
 }
  
