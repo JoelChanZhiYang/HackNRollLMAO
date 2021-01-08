@@ -35,6 +35,7 @@
 .row_segment {
   width: 32%;
   text-align: center;
+  position: relative;
 }
 
 @keyframes App-logo-spin {
