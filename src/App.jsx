@@ -10,6 +10,7 @@ class App extends Component {
     super(props);
 
     this.state = {
+      header: "Scroll Down For Something Cool",
       items: [],
       length: 0,
     };
@@ -25,7 +26,7 @@ class App extends Component {
   }
 
   bringToTop() {
-    this.setState((state) => ({ items: [], length: 0 }));
+    this.setState((state) => ({ items: [], length: 0, header: "Oops that Treasure is a TRAPsure!" }));
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0;
   }
@@ -84,6 +85,7 @@ class App extends Component {
     return (
       <div className="row justify-content-center">
         <div className="col-sm-12 col-md-9 col-lg-8">
+          <h1 className="text-center">{this.state.header}</h1>
           <InfiniteScroll
             pageStart={0}
             loadMore={this.loadItems}
