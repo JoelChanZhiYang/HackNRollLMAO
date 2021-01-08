@@ -29,11 +29,13 @@
 }
 
 .one_row {
-  display:flex
+  display: flex;
+  padding: 30px
 }
 
-.one_row :nth-child(1){
-  width:32%
+.row_segment {
+  width: 32%;
+  text-align: center;
 }
 
 @keyframes App-logo-spin {

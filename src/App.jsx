@@ -3,7 +3,7 @@ import InfiniteScroll from "react-infinite-scroller";
 import { Component } from "react";
 import Arrow from "./Arrow.jsx";
 import Text from "./Text.jsx";
-// import Treasture from "./Treasure.jsx";
+import Treasure from "./Treasure.jsx";
 
 class App extends Component {
   constructor(props) {
@@ -30,12 +30,15 @@ class App extends Component {
     document.documentElement.scrollTop = 0;
   }
 
-  randomNum(index){
+  randomNum(index) {
     Math.seed(index);
     return Math.random();
   }
 
-  
+  emptyRowSegment() {
+    return <div className="row_segment"></div>;
+  }
+
   render() {
     const loader = (
       <div className="loader" key={0}>
@@ -45,10 +48,9 @@ class App extends Component {
     const items = this.state.items.map((e, index) => {
       return (
         <div key={index} className="one_row">
-          {/* <Treasure fku={this.bringToTop}></Treasure> */}
-          <div style={{width:"32%"}}></div>
+          <Treasure fku={this.bringToTop}></Treasure>
           <Arrow></Arrow>
-          <Text randNum= {e}/>
+          <Text randNum={e} />
         </div>
       );
     });
