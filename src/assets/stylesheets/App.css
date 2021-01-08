@@ -60,3 +60,7 @@
   cursor: pointer;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+.row{
+  --bs-gutter-x:none !important;
+}
