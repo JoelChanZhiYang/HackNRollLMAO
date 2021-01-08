@@ -1,0 +1,20 @@
+.flying_item {
+  background-color: black;
+  height: 20px;
+  width: 20px;
+  left: 1000px;
+  animation-duration: 3s;
+  animation-name: flying-target;
+  position:relative;
+  border-radius: 50%;
+}
+@keyframes flying-target{
+    from {
+        left: -1000px;
+    }
+
+    to {
+        left: 1000px;
+        display: none;
+    }
+}
