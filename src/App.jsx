@@ -1,6 +1,7 @@
 import "./App.css";
 import InfiniteScroll from "react-infinite-scroller";
 import { Component } from "react";
+import Arrow from "./Arrow.jsx";
 
 class App extends Component {
   constructor(props) {
@@ -38,7 +39,7 @@ class App extends Component {
         <button onClick={this.bringToTop}>hi</button>
       ) : (
         <h1 key={index} className="">
-          hi
+          <Arrow />
         </h1>
       );
     });
