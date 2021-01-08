@@ -26,7 +26,11 @@ class App extends Component {
   }
 
   bringToTop() {
-    this.setState((state) => ({ items: [], length: 0, header: "Oops that Treasure is a TRAPsure!" }));
+    this.setState((state) => ({
+      items: [],
+      length: 0,
+      header: "Oops that Treasure is a TRAPsure!",
+    }));
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0;
   }
@@ -47,38 +51,38 @@ class App extends Component {
       </div>
     );
     const items = this.state.items.map((e, index) => {
-      if(e < 0.05){
+      if (e < 0.05) {
         return (
           <div key={index} className="one_row">
             {this.emptyRowSegment()}
             <Arrow></Arrow>
             <Text randNum={e * 10} />
           </div>
-        )
-      }else if(e < 0.1){
+        );
+      } else if (e < 0.1) {
         return (
           <div key={index} className="one_row">
             <Text randNum={e * 10} />
             <Arrow></Arrow>
             {this.emptyRowSegment()}
           </div>
-        )
-      }else if(e < 0.9){
+        );
+      } else if (e < 0.9) {
         return (
           <div key={index} className="one_row">
             {this.emptyRowSegment()}
             <Arrow></Arrow>
             {this.emptyRowSegment()}
           </div>
-        )
-      }else{
+        );
+      } else {
         return (
           <div key={index} className="one_row">
             {this.emptyRowSegment()}
             <Arrow></Arrow>
-            <Treasure fku={this.bringToTop}></Treasure>
+            <Treasure fku={this.bringToTop} randNum={(e - 0.9) * 10}></Treasure>
           </div>
-        )
+        );
       }
     });
 

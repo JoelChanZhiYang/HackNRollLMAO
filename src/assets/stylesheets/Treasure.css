@@ -1,3 +1,10 @@
 .treasure_img {
     width: 100px;
 }
+
+.treasure_grid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: stretch;
+}
