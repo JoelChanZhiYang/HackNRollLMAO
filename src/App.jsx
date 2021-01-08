@@ -63,7 +63,7 @@ class App extends Component {
             {this.emptyRowSegment()}
           </div>
         )
-      }else if(e < 0.996){
+      }else if(e < 0.9){
         return (
           <div key={index} className="one_row">
             {this.emptyRowSegment()}
