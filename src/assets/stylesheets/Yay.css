@@ -1,7 +1,14 @@
+@font-face {
+  font-family: congrats;
+  src: url(../fonts/BeautyMountains.woff);
+}
+
 .congrats_banner {
   text-align: center;
   margin: 30px;
   margin-bottom: 50px;
+  font-family: congrats;
+  font-size: 5vw;
 }
 
 .congrats_img {

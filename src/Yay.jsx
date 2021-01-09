@@ -13,7 +13,7 @@ class Yay extends Component {
     return (
       <div className="row justify-content-center">
         <div className="col-sm-12 col-md-9 col-lg-8">
-          <h1 className="congrats_banner">Congratulations!!!</h1>
+          <h1 className="congrats_banner">You're a SUPERSTAR!</h1>
           <div className="flip-box">
             <div className="flip-box-inner">
               <div className="flip-box-front">

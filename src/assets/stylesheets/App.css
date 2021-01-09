@@ -48,19 +48,25 @@
   }
 }
 
+@font-face {
+  font-family: banner;
+  src: url(../fonts/SanMarinoBeach-2OOLW.woff);
+}
+
 .banner {
   display: block;
   font-size: 7vw;
   font-weight: bold;
   margin-bottom: 10vw;
+  font-family: banner;
 }
 
-.final{
+.final {
   text-align: center;
   cursor: pointer;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: banner;
 }
 
-.row{
-  --bs-gutter-x:none !important;
+.row {
+  --bs-gutter-x: none !important;
 }
