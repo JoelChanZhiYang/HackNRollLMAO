@@ -20,7 +20,6 @@ const texts = [
   "Don't stop until you're proud",
   "Good things take time",
   "Your success lie in you",
-  "Be you\nDo you\nFor you",
   "Scroll till you drop!",
   "Your only limit is your mind",
   "Just do it",

@@ -18,36 +18,14 @@ const texts = [
   "I'm a trap",
 ];
 
-function shuffle(array) {
-  var currentIndex = array.length,
-    temporaryValue,
-    randomIndex;
-
-  // While there remain elements to shuffle...
-  while (0 !== currentIndex) {
-    // Pick a remaining element...
-    randomIndex = Math.floor(Math.random() * currentIndex);
-    currentIndex -= 1;
-
-    // And swap it with the current element.
-    temporaryValue = array[currentIndex];
-    array[currentIndex] = array[randomIndex];
-    array[randomIndex] = temporaryValue;
-  }
-
-  return array;
-}
-
-shuffle(texts);
-
 class Treasure extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {randNum: Math.random()};
   }
 
   render() {
-    let item = texts[Math.floor(this.props.randNum * texts.length)];
+    let item = texts[Math.floor(this.state.randNum * texts.length)];
     return (
       <div className="row_segment">
         <div className="treasure_grid">

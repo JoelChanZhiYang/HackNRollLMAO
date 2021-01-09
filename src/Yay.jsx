@@ -17,7 +17,7 @@ class Yay extends Component {
           <div className="flip-box">
             <div className="flip-box-inner">
               <div className="flip-box-front">
-                <img src={img} alt="its a star" className="congrats_img" />;
+                <img src={img} alt="its a star" className="congrats_img" />
               </div>
               <div className="flip-box-back">
                 <img src={back_img} alt="its a star" className="congrats_img" />

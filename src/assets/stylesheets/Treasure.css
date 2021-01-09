@@ -25,6 +25,7 @@
 
 .img_store:hover #hover {
   display: flex;
+  margin: auto;
 }
 
 #hover {
